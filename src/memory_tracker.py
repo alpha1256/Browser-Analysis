@@ -1,17 +1,20 @@
 import psutil
+import time
 
-def getMem(filename):
+def getMem(filename,upTime):
 	a = psutil.virtual_memory()
-	print(a.percent)
-	b=str(a.percent) + "\n"
+	b=str(a.percent) + " " + upTime + "\n"
 	fhand.write(b)
 	
 filename = "Memory.txt"
 fhand = open(filename,'w')
 
+upTime = 0
+
 while True:
-	sleep(10)
-	getMem(fhand)
+	time.sleep(10)
+	upTime = upTime + 10
+	getMem(fhand,upTime)
 
 
 	
