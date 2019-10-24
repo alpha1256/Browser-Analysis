@@ -3,7 +3,7 @@ import time
 
 def getMem(filename,upTime):
 	a = psutil.virtual_memory()
-	b=str(a.percent) + " " + upTime + "\n"
+	b=str(a.percent) + " " + str(upTime) + "\n"
 	fhand.write(b)
 	
 filename = "Memory.txt"
