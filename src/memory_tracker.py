@@ -10,10 +10,10 @@ filename = "Memory.txt"
 fhand = open(filename,'w')
 
 upTime = 0
-
+timeIncrement = input("Enter how many sec increment you want to use")
 while True:
-	time.sleep(10)
-	upTime = upTime + 10
+	time.sleep(int(timeIncrement))
+	upTime = upTime + int(timeIncrement)
 	getMem(fhand,upTime)
 
 
