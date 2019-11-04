@@ -10,4 +10,4 @@ To run this program `psutil` needs to be installed. To do this `pip install psut
 
 ### Memory Graph
 This program will create a line chart graph from the previously created text file.
-To run this program 'plotly' must be installed. To do this 'pip install plotly==4.2.1'
+To run this program 'plotly' must be installed. To do this `pip install plotly==4.2.1`
